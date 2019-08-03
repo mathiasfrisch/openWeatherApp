@@ -1,0 +1,21 @@
+<mat-card class="input-card">
+    <mat-card-content>
+        <form class="input-form">
+            <mat-form-field class="input">
+              <input matInput placeholder="User Name" [(ngModel)]="user" name="user" required>
+              <mat-error>
+                User name is required!
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="input-form">
+              <input matInput placeholder="Password" type="password" [(ngModel)]="password" name="password" required>
+              <mat-error>
+                  Password is required!
+                </mat-error>
+            </mat-form-field>
+            <button mat-raised-button (click)='login()' class="submit-button">Login</button>
+            <p>{{errorMessage}}</p>
+          </form>
+
+    </mat-card-content>
+  </mat-card>

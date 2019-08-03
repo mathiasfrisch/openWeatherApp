@@ -1,0 +1,20 @@
+<mat-card class="weather-card">
+    <mat-card-content>
+      <div *ngIf="weatherForecast">
+          <p class="forecast-container">
+              <mat-button-toggle-group name="weatherData" aria-label="Font Style">
+                  <mat-button-toggle value="temperature" (click)='showTemperature()'>Temperature</mat-button-toggle>
+                  <mat-button-toggle value="humidity" (click)='showHumidity()'>Humidity</mat-button-toggle>
+                  <mat-button-toggle value="windspeed" (click)='showWindSpeed()'>Windspeed</mat-button-toggle>
+              </mat-button-toggle-group>
+            </p>
+
+      </div>
+      <div id="forecast-chart"></div>
+        <div *ngIf="errorMessage">{{errorMessage}}</div>
+        <div *ngIf="!location">
+          Please enter location!
+        </div>
+    </mat-card-content>
+</mat-card>
+

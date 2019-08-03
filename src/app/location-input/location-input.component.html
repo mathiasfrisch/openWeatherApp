@@ -1,0 +1,21 @@
+<mat-card class="input-card">
+    <mat-card-content>
+        <form class="input-form">
+            <mat-form-field class="input">
+              <input matInput placeholder="City Name" [(ngModel)]="location.city" name="city" required>
+              <mat-error>
+                City name is required!
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field *ngIf="showCountryCode" class="input">
+              <input matInput placeholder="Country Code" [(ngModel)]="location.countryCode" name="countryCode">
+            </mat-form-field>
+            <button mat-raised-button class="submit-button" (click)='updateWeatherData()'>Update Data</button>
+          </form>
+    </mat-card-content>
+  </mat-card>
+
+
+
+
+

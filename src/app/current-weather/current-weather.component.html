@@ -1,0 +1,21 @@
+<mat-card class="weather-card">
+    <mat-card-content>
+        <div *ngIf="weatherData">
+            <p>Current Temperature is: {{temperature}} °C</p>
+            <div>
+                <img src="../../assets/sunrise-48.png" width="25px" height="auto">
+                <div style="display: inline-block;">Sunrise: {{sunrise}}</div>
+            </div>
+            <div>
+                <img src="../../assets/sunset-48.png" width="25px" height="auto">
+                <div style="display: inline-block;">
+                    Sunset: {{sunset}}
+                </div>
+            </div>
+        </div>
+          <div *ngIf="errorMessage">{{errorMessage}}</div>
+          <div *ngIf="!location">
+            Please enter location!
+          </div>
+    </mat-card-content>
+</mat-card>

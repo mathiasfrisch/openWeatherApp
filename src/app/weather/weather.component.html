@@ -1,0 +1,18 @@
+<div>
+    <mat-tab-group (selectedTabChange)="onTabChanged($event)">
+        <mat-tab label="Today">
+          <div class="container">
+              <app-location-input [showCountryCode] = false></app-location-input>
+              <app-current-weather></app-current-weather>
+          </div>
+        </mat-tab>
+        <mat-tab label="Forecast">
+            <div class="container">
+              <app-location-input ></app-location-input>
+              <app-weather-forecast style="width: calc(100% - 400px);"></app-weather-forecast>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+
