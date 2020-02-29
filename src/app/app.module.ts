@@ -1,6 +1,7 @@
+import { HttpClientModule } from '@angular/common/http';
+import { httpInterceptorProviders } from './interceptors/index';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -34,7 +35,7 @@ import { WeatherComponent } from './weather/weather.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     RouterModule,
     MatInputModule,
@@ -44,7 +45,9 @@ import { WeatherComponent } from './weather/weather.component';
     MatCardModule,
     MatButtonToggleModule,
   ],
-  providers: [],
+  providers: [
+    httpInterceptorProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
