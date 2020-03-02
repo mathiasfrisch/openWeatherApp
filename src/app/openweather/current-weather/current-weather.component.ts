@@ -1,7 +1,7 @@
-import { WeatherData } from './../data-model/weather-data';
+import { WeatherData } from '../data-model/weather-data';
 import { Component, OnInit } from '@angular/core';
 import { OpenweatherService } from '../services/openweather.service';
-import { ILocation } from '../app.component';
+import { ILocation } from '../data-model/location-data';
 
 /**
  * Shows the current weather data if the location changes

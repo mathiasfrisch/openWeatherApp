@@ -2,11 +2,6 @@ import { LoginService } from './services/login.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-export interface ILocation {
-  countryCode: string;
-  city: string;
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

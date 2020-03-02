@@ -1,6 +1,6 @@
-import { WeatherForecast } from './../data-model/weather-data';
+import { WeatherForecast } from '../data-model/weather-data';
 import { Component, OnInit } from '@angular/core';
-import { ILocation } from '../app.component';
+import { ILocation } from '../data-model/location-data';
 import { OpenweatherService } from '../services/openweather.service';
 import * as c3 from 'c3';
 

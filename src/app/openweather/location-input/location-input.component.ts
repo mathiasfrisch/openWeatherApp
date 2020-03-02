@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { OpenweatherService } from '../services/openweather.service';
-import { ILocation} from '../app.component';
-
+import { ILocation} from '../data-model/location-data';
 
 @Component({
   selector: 'app-location-input',

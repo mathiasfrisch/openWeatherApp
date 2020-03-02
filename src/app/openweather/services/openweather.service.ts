@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { ILocation } from './../app.component';
-import { WeatherDataFactory, WeatherData, WeatherForecast } from './../data-model/weather-data';
+import { ILocation } from '../data-model/location-data';
+import { WeatherDataFactory, WeatherData, WeatherForecast } from '../data-model/weather-data';
 import { Injectable } from '@angular/core';
 import { Observable, Subject, throwError } from 'rxjs';
 import { map, catchError, retry } from 'rxjs/operators';
