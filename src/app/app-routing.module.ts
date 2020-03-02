@@ -29,9 +29,8 @@ export class LoginActivate implements CanActivate {
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, pathMatch: 'full' },
-  // { path: 'weather', component: WeatherComponent, canActivate: [LoginActivate] },
   { path: 'weather',
-    loadChildren: () => import('./openweather/openweather.module').then(m => m.OpenweatherModule)},
+    loadChildren: () => import('./openweather/openweather.module').then(m => m.OpenweatherModule), canActivate: [LoginActivate]},
   { path: '**', component: WeatherComponent, canActivate: [LoginActivate] }
   ];
 
