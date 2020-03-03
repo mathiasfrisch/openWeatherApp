@@ -1,3 +1,4 @@
+import { OpenweatherService } from './services/openweather.service';
 import { LoginModule } from './../login/login.module';
 import { MatTabsModule } from '@angular/material/tabs';
 import { LocationInputComponent } from './location-input/location-input.component';
@@ -23,6 +24,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     LocationInputComponent
   ],
   providers: [
+    OpenweatherService,
     httpInterceptorProviders
   ],
   imports: [
