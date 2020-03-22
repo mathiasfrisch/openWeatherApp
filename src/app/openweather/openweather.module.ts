@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { OpenweatherRoutingModule } from './openweather-routing.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
   ],
   imports: [
     CommonModule,
+    OpenweatherRoutingModule,
     HttpClientModule,
     FormsModule,
     MatInputModule,
@@ -36,8 +38,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatToolbarModule,
     MatCardModule,
     MatButtonToggleModule,
-    MatTabsModule,
-    LoginModule
+    MatTabsModule
   ]
 })
 export class OpenweatherModule { }
